@@ -1,0 +1,28 @@
+GET http://localhost:3000/token/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzMiIsImlhdCI6MTYxNjc0NDM0NCwiZXhwIjoxNjE2NzQ0Mzc0fQ.nCZIDu3OpaQD0Bcac1LBJhvPXAIRsb8xfvk9z-_T4WA
+
+###
+
+POST http://localhost:3000/token
+Content-Type:  application/json
+
+{
+    "username": "tes2"
+}
+
+###
+POST http://localhost:3000/token/refreshtoken
+Content-Type:  application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzMiIsImlhdCI6MTYxNjc0NDMwMSwiZXhwIjoxNjE2NzQ0MzMxfQ.l5JjUAvgYhNQEcS6KeRkFi-zDB9o7zWxy_Plu5mOFio" 
+}
+
+###
+
+DELETE http://localhost:3000/token/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzMiIsImlhdCI6MTYxNjc0NDMwMSwiZXhwIjoxNjE2NzQ0MzMxfQ.l5JjUAvgYhNQEcS6KeRkFi-zDB9o7zWxy_Plu5mOFio"
+}
